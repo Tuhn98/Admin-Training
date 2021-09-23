@@ -1,0 +1,22 @@
+{
+    "content": {
+        "HOME": "Trang chủ",
+        "REPORTS": "Báo cáo",
+        "PRODUCTS": "Sản phẩm",
+        "MESSAGE": "Tin nhắn",
+        "SUPPORT": "Hỗ trợ",
+        "TEAM": "Nhóm",
+        "LIGHT": "Sáng",
+        "DARK": "Tối",
+        "BLUE": "Xanh",
+        "HOME_ADMIN": "Trang chủ-Admin",
+        "VIETNAMESE": "Tiếng Việt",
+        "ENGLISH": "Tiếng Anh",
+        "JAPANESE": "Tiềng Nhật",
+        "SEARCH": "Tìm kiếm",
+        "LIST_EMPLOYEE": "Danh sách nhân viên",
+        "NAME": "Tên",
+        "CREATED": "Ngày tạo",
+        "UPDATED": "Ngày cập nhật"
+    }
+}

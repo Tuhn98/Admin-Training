@@ -1,0 +1,22 @@
+{
+    "content": {
+        "HOME": "Home",
+        "REPORTS": "Reports",
+        "PRODUCTS": "Products",
+        "MESSAGE": "Message",
+        "SUPPORT": "Support",
+        "TEAM": "Team",
+        "LIGHT": "Light",
+        "DARK": "Dark",
+        "BLUE": "Blue",
+        "HOME_ADMIN": "Home-Admin",
+        "VIETNAMESE": "Vietnamese",
+        "ENGLISH": "English",
+        "JAPANESE": "Japanese",
+        "SEARCH": "Search",
+        "LIST_EMPLOYEE": "List of employee",
+        "NAME": "Name",
+        "CREATED": "Created",
+        "UPDATED": "Updated"
+    }
+}

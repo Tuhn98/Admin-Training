@@ -1,0 +1,22 @@
+{
+    "content": {
+        "HOME": "家",
+        "REPORTS": "レポート",
+        "PRODUCTS": "製品",
+        "MESSAGE": "メッセージ",
+        "SUPPORT": "サポート",
+        "TEAM": "チーム",
+        "LIGHT": "光",
+        "DARK": "暗い",
+        "BLUE": "青",
+        "HOME_ADMIN": "ホーム管理者",
+        "VIETNAMESE": "ベトナム語",
+        "ENGLISH": "英語",
+        "JAPANESE": "日本",
+        "SEARCH": "探す",
+        "LIST_EMPLOYEE": "従業員のリスト",
+        "NAME": "名前",
+        "CREATED": "作成した",
+        "UPDATED": "更新しました"
+    }
+}

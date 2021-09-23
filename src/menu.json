@@ -1,0 +1,50 @@
+{   
+    "menu": [
+        {
+            "link": "/",
+            "title": "Home"
+        },
+        {
+            "link": "/reports",
+            "title": "Reports",
+            "menu": [
+                {
+                    "link": "/apples",
+                    "title": "Apples"
+                },
+                {
+                    "link": "/bananas",
+                    "title": "Bananas"
+                }
+            ]
+        },
+        {
+            "link": "/products",
+            "title": "Products",
+            "menu": [
+                {
+                    "link": "/carrots",
+                    "title": "Carrots"
+                },
+                {
+                    "link": "#",
+                    "title": "More",
+                    "menu": [
+                        {
+                            "link": "/thirdlevel1",
+                            "title": "3rd level menu"
+                        },
+                        {
+                            "link": "/thirdlevel2",
+                            "title": "3rd level two"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "link": "/about",
+            "title": "About"
+        }
+    ]
+}
