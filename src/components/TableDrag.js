@@ -140,45 +140,53 @@ export default class SortableTable extends React.Component {
 
     hiddenColName = () => {
         const hideCol = [...this.state.columns]
-        if(hideCol[1].className==="drag-visible") hideCol[1].className="drag-hidden"
-        else hideCol[1].className="drag-visible"
+        hideCol.map((col) => {
+            if (col.title === "Name") {
+                if (col.className === "drag-visible") col.className="drag-hidden"
+                else col.className="drag-visible"
+            }
+        })
         this.setState({
             columns: hideCol
         })
     }
 
-    showLabelBtnHiddenName = (show) => {
-        if(show[1].className==="drag-visible") return "Hide col Name"
-        else return "Show col Name"
+    showLabelBtnHiddenName = (hideCol) => {
+       return hideCol.map((col) => {
+            if (col.title === "Name") {
+                if (col.className === "drag-visible") return "hidden Name"
+                else return "visible Name"
+            }
+        })
     }
     render() {
         const { dataSource } = this.state;
         const that = this
         const columnss = [
-                {
-                    title: 'Sort',
-                    dataIndex: 'sort',
-                    width: 30,
-                    className: 'drag-visible',
-                    render: () => <DragHandle />,
-                },
-                {
-                    title: 'Name',
-                    dataIndex: 'name',
-                    className: 'drag-visible',
-                    ...this.getColumnSearchProps('name'),
-                },
-                {
-                    title: 'Age',
-                    dataIndex: 'age',
-                    ...this.getColumnSearchProps('age')
-                },
-                {
-                    title: 'Address',
-                    dataIndex: 'address',
-                    ...this.getColumnSearchProps('address'),
-                },
-            ]
+            {
+                title: 'Sort',
+                dataIndex: 'sort',
+                width: 30,
+                // className: 'drag-visible',
+                render: () => <DragHandle />,
+            },
+            {
+                title: 'Name',
+                dataIndex: 'name',
+                className: 'drag-visible',
+                ...this.getColumnSearchProps('name'),
+            },
+            {
+                title: 'Age',
+                dataIndex: 'age',
+                ...this.getColumnSearchProps('age')
+            },
+            {
+                title: 'Address',
+                dataIndex: 'address',
+                ...this.getColumnSearchProps('address'),
+            },
+        ]
         this.dragProps = {
             onDragEnd(fromIndex, toIndex) {
                 const columns = [...columnss];
@@ -194,7 +202,7 @@ export default class SortableTable extends React.Component {
         return (
 
             <ReactDragListView.DragColumn {...this.dragProps}>
-                <button style={{width: 150, marginBottom: 15, height: 50, fontSize: 20}} onClick={this.hiddenColName}>{this.showLabelBtnHiddenName(this.state.columns)}</button>
+                <button style={{ width: 150, marginBottom: 15, height: 50, fontSize: 20 }} onClick={this.hiddenColName}>{this.showLabelBtnHiddenName(this.state.columns)}</button>
                 <Table
                     pagination={false}
                     dataSource={dataSource}
